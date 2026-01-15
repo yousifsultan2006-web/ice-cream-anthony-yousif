@@ -12,3 +12,18 @@ main {
     margin: 0 auto;
     display: block;
 }
+fieldset{
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:aquamarine;
+
+}
+label{
+    padding: 0 10px;
+    display: block;
+}
+#sprinkles{
+    display: inline-block;
+    gap: 10px;
+}

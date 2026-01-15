@@ -14,18 +14,35 @@
             <!-- Personal Info -->
             <fieldset>
                 <legend>Personal Information</legend>
-                <label for="name"> Name: 
+                <label for="name"> Name:</label>
                     <input type="text" id="name" name="name" required>
-                </label>
+                
 
-                <label for="email">Email: 
+                <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                </label>
+                
 
             </fieldset>
 
+            <!-- Order Details -->
             <fieldset>
-                
+                <legend>Order Details</legend>
+                <select id="flavor" name="flavor">
+                    <option value=""disabled selected>Select Ice Cream Flavor</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="mint">Mint Chocolate Chip</option>
+                    <option value="cookie-dough">Cookie Dough</option>
+                </select>
+                <label for="cone">Choose your cone:</label>
+                <input type="radio" id="waffle-cone" name="cone" value="waffle-cone">
+                <label for="Waffle Cone">Waffle Cone</label>
+                <input type="radio" id="sugar-cone" name="cone" value="sugar-cone">
+                <label for="Sugar Cone">Sugar Cone</label>  
+                <input type="radio" id="cup" name="cone" value="cup">
+                <label for="Cup">Cup</label>
+
             </fieldset>
          </form>
     </main>

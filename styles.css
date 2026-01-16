@@ -1,13 +1,15 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {
     margin: 0;
+    display: flex;
 }
 
 main {
-    background-color: grey;
+    background-color: rgb(235, 245, 253);
     width: 70%;
     margin: 0 auto;
     display: block;
@@ -15,15 +17,15 @@ main {
 fieldset{
     border: 2px solid whitesmoke;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     background-color:aquamarine;
 
 }
 label{
     padding: 0 10px;
-    display: block;
-}
-#sprinkles{
     display: inline-block;
-    gap: 10px;
+}
+.pinformation{
+    display: block;
+    
 }

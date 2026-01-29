@@ -5,13 +5,13 @@ import express from 'express';
 const app = express();
 
 // define port
-const PORT = 3000;
+const PORT = 8000;
 
 // define default route
 
 app.get('/', (req,res)=> {
-    // res.sendFile(`${import.meta.dirname}/views/home.html`);
-    res.send('welcom to our ice cream shop')
+    res.sendFile(`${import.meta.dirname}/views/home.html`);
+    
 });
 
 app.listen(PORT,()=> {

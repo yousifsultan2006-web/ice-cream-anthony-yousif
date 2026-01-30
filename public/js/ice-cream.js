@@ -16,9 +16,23 @@ if (!firstName) {
 
 }
 //validate email
-
+let email = document.getElementById("email").value.trim();
+if(!email) {
+    document.getElementById("email-error").style.display = "block";
+    isValid = false;
+}
 //validate cone type
-
+let cone = document.getElementsByID("sugar-cone","waffle-cone", "cup").value.trim();
+if(!cone){
+    document.getElementsById("cone-error").style.display = "block";
+    isValid = false;
+}
+//validate flavor 
+let flavor = document.getElementById("flavor").value.trim();
+if(!flavor) {
+    document.getElementById("flavor-error").style.display = "block";
+    isValid = false;
+}
 
 
 

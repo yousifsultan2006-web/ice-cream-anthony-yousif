@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice Cream Order Form</title>
-    <link rel="stylesheet" type="text/css" href="public/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
     <!-- <script src="/public/js/app.js" defer></script> -->
-    <script src="/public/js/ice-cream.js" defer></script>
+    <script src="/js/ice-cream.js" defer></script>
   </head>
 
   <body>
@@ -24,16 +24,20 @@
         <fieldset>
           <legend class="pinformation">Personal Information</legend>
           <label for="name"> Name:</label>
-          <input type="text" id="name" name="name" required />
+          <span id="name-error" class="error">Name is Required</span>
+          <input type="text" id="name" name="name" />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <span id="email-error" class="error"> valid Email is required</span>
+          <input type="email" id="email" name="email"/>
         </fieldset>
 
         <!-- Order Details -->
         <fieldset>
           <legend>Order Details</legend>
+          
           <select id="flavor" name="flavor">
+            <span id="flavor-error" class="error"></span>
             <option value="" disabled selected>Select Ice Cream Flavor</option>
             <option value="vanilla">Vanilla</option>
             <option value="chocolate">Chocolate</option>
@@ -46,6 +50,7 @@
           <label>Choose your cone:</label>
           <br />
           <label for="waffle-cone">
+            <span id = "cone-error" class="error"></span>
             <input
               type="radio"
               id="waffle-cone"
@@ -62,6 +67,7 @@
             />Sugar Cone</label
           >
           <label for="cup">
+            <span id="cone-error" class="error"></span>
             <input type="radio" id="cup" name="cone" value="cup" /> Cup</label
           >
 

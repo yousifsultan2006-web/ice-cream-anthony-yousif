@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+</head>
+<body>
+    <h1>Thank you for your order, <%= order.name %>!</h1>
+    <p>Your delicious ice cream order details:</p>
+    <ul>
+        <li>Flavor: <%= order.flavor %></li>
+        <li>Cone Type: <%= order.cone %></li>
+        <li>Toppings: <%= order.toppings %></li>
+        <li>Comment: <%= order.comments %></li>
+    </ul>
+    <a href = "/">Place another order</a>
+    
+    <footer>
+        <a href = "/admin">View all orders</a>
+    </footer>
+</body>
+</html>

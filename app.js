@@ -5,7 +5,7 @@ import express from 'express';
 const app = express();
 
 // define port
-const PORT = 8000;
+const PORT = 3015;
 
 //set up view engine
 app.set('view engine', 'ejs');

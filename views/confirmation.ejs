@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
 </head>
 <body>
     <h1>Thank you for your order, <%= order.name %>!</h1>
-    <p>Your delicious ice cream order details:</p>
-    <ul>
+    <p class="order-details">Your delicious ice cream order details:</p>
+    <ul class="order-details">
         <li>Flavor: <%= order.flavor %></li>
         <li>Cone Type: <%= order.cone %></li>
         <li>Toppings: <%= order.toppings %></li>
